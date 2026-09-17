@@ -68,5 +68,8 @@ const result = 1 / 0;
 const result = safeDivide(1, 0);
 >>>>>>> REPLACE
 ```
-3. Apply the patchPaste the AI's response into a patch.txt file and execute:Bashkuttab apply patch.txt
+3. Apply the patchPaste the AI's response into a patch.txt file and execute
+```bash
+kuttab apply patch.txt
+```
 Kuttab will parse the diff blocks, match the original code precisely, and rewrite the files directly on disk.🛠️ CLI ReferenceCommandDescriptionkuttab pack [options]Collects project files into a single context file (kuttab-context.txt).kuttab apply <file>Parses and applies SEARCH/REPLACE patch blocks from a file to your local code.Options for pack-o, --output <file> : Specify custom output file path (Default: kuttab-context.txt).-d, --dir <directory> : Target a specific sub-directory instead of the entire root.🧠 Why Kuttab?Most AI coding tools (Aider, Cursor, Copilot) force you into monthly API consumption models or proprietary IDEs.Kuttab keeps you in full control:Speed: Generating a 10-line SEARCH/REPLACE patch takes ~2 seconds on web LLMs vs waiting 1 minute for 1,400 lines of full file rewrite.Safety: Code that isn't targeted in the SEARCH block is never touched or hallucinated away.Privacy: You control exactly what context is generated and what patches are executed.📄 LicenseMIT
