@@ -2,9 +2,9 @@
   "name": "kuttab",
   "version": "1.0.0",
   "description": "CLI local-first pour la gestion et le refactoring de code par IA sans clé API",
-  "main": "dist/index.js",
+  "main": "dist/kuttab.js",
   "bin": {
-    "kuttab": "dist/bin/kuttab.js"
+    "kuttab": "dist/kuttab.js"
   },
   "files": [
     "dist"
