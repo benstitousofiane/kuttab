@@ -2,19 +2,35 @@
   "name": "kuttab",
   "version": "1.0.0",
   "description": "CLI local-first pour la gestion et le refactoring de code par IA sans clé API",
-  "main": "dist/bin/kuttab.js",
+  "main": "dist/index.js",
   "bin": {
-    "kuttab": "./dist/bin/kuttab.js"
+    "kuttab": "dist/bin/kuttab.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup",
-    "prepare": "npm run build"
+    "build": "tsup src/bin/kuttab.ts --format cjs,esm --clean",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ton-pseudo/kuttab.git"
+    "url": "git+https://github.com/benstitousofiane/kuttab.git"
   },
-  "keywords": ["cli", "llm", "ai", "patch", "context", "developer-tools"],
-  "author": "Ton Nom",
-  "license": "MIT"
+  "keywords": [
+    "cli",
+    "llm",
+    "ai",
+    "patch",
+    "context",
+    "developer-tools",
+    "local-first",
+    "tauri"
+  ],
+  "author": "Sofiane Benstitou",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
 }
