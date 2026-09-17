@@ -97,6 +97,28 @@ Kuttab keeps you in full control:
 - **Safety:** Code that isn't targeted in the SEARCH block is never touched or hallucinated away.
 - **Privacy:** You control exactly what context is generated and what patches are executed.
 
+4. Local install (Nixos)
+Clone, cd and build
+```bash
+git clone https://github.com/benstitousofiane/kuttab
+```
+```bash
+cd kuttab
+```
+```bash
+npm run build
+```
+
+Install on your project (Path depend where you've built kuttab)
+```bash
+npm install --save-dev file:~/kuttab
+```
+
+Then, install depedencies on your project file
+```
+npm i
+``
+
 ## 📄 License
 
 MIT
