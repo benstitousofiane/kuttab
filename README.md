@@ -115,9 +115,9 @@ npm install --save-dev file:~/kuttab
 ```
 
 Then, install depedencies on your project file
-```
+```bash
 npm i
-``
+```
 
 ## 📄 License
 
